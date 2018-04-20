@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "outDir": "./built/",
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "es6",
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "noImplicitAny": true,
+        "rootDir": "src",
+        "typeRoots": [
+            "./types",
+            "node_modules/@types"
+        ],
+        "baseUrl": "."
+    },
+    "include": [
+        "./types/**/*.d.ts",
+        "./src/**/*.js",
+        "./src/**/*.ts",
+        "./src/**/*.vue"
+    ]
+}

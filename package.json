@@ -1,0 +1,54 @@
+{
+    "name": "traduki",
+    "version": "0.0.0",
+    "description": "Translation manager",
+    "scripts": {
+        "dev": "node scripts/dev-server.js",
+        "start": "node scripts/dev-server.js",
+        "build": "node scripts/build.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/traduki/frontend.git"
+    },
+    "keywords": [],
+    "author": "Joao Paulo Martins <martins.joao.paulo.a@gmail.com>",
+    "license": "Comercial",
+    "bugs": {
+        "url": "https://gitlab.com/traduki/frontend/issues"
+    },
+    "homepage": "https://traduki.me",
+    "dependencies": {
+        "axios": "~0.18.0",
+        "vue": "^2.5.16",
+        "vue-i18n": "^7.6.0",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1",
+        "vuex-router-sync": "^5.0.0"
+    },
+    "devDependencies": {
+        "connect-history-api-fallback": "^1.5.0",
+        "eslint": "^4.19.1",
+        "eventsource-polyfill": "^0.9.6",
+        "express": "^4.16.3",
+        "html-webpack-plugin": "^3.2.0",
+        "ts-loader": "^4.2.0",
+        "typescript": "^2.8.1",
+        "vue-class-component": "^6.2.0",
+        "vue-loader": "^14.2.2",
+        "vue-property-decorator": "^6.0.0",
+        "vue-template-compiler": "^2.5.16",
+        "webpack": "^4.5.0",
+        "webpack-dev-middleware": "^3.1.2",
+        "webpack-hot-middleware": "^2.21.2"
+    },
+    "engines": {
+        "node": ">= 8.0.0",
+        "npm": ">= 5.0.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}
