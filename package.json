@@ -1,23 +1,22 @@
 {
-    "name": "traduki",
-    "version": "0.0.0",
-    "description": "Translation manager",
+    "name": "vue-boilerplate",
+    "version": "1.0.0",
+    "description": "Vue boilerplate with TypeScript for developing small to large, easy to scale, Single Page Applications.",
     "scripts": {
-        "dev": "node scripts/dev-server.js",
         "start": "node scripts/dev-server.js",
-        "build": "node scripts/build.js"
+        "build": "node scripts/build.js",
+        "test": "echo \"Error: no tests created\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://gitlab.com/traduki/frontend.git"
+        "url": "git+https://gitlab.com/kadro/vue-boilerplate.git"
     },
     "keywords": [],
     "author": "Joao Paulo Martins <martins.joao.paulo.a@gmail.com>",
     "license": "Comercial",
     "bugs": {
-        "url": "https://gitlab.com/traduki/frontend/issues"
+        "url": "https://gitlab.com/kadro/vue-boilerplate/issues"
     },
-    "homepage": "https://traduki.me",
     "dependencies": {
         "axios": "~0.18.0",
         "vue": "^2.5.16",
