@@ -1,0 +1,3 @@
+interface VueConstructor {
+  router: any
+}

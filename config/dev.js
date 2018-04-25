@@ -1,6 +1,12 @@
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var path = require('path')
 
+function resolve(dir) {
+    return path.join(__dirname, '..', dir)
+}
+
+  
 module.exports = {
     entry: {
         app: [
@@ -11,9 +17,10 @@ module.exports = {
     mode: 'development',
     resolve: {
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.esm.js',
+            '@': resolve('src')
         },
-        extensions: ['*', '.js', '.vue', '.json']
+        extensions: ['*', '.ts', '.js', '.vue', '.json']
     },
     devtool: '#source-map',
     module: {
