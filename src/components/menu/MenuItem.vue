@@ -1,0 +1,31 @@
+<template>
+    <router-link :to="to"><slot /></router-link>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+import { Component, Prop } from 'vue-property-decorator';
+
+@Component({})
+export default class MenuItem extends Vue {
+
+    @Prop()
+    to: any
+
+}
+</script>
+
+<style lang="scss" scoped>
+a:link, a:visited {
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+    color: #FFF;
+}
+
+a:hover {
+    background: #757575;
+}
+
+</style>

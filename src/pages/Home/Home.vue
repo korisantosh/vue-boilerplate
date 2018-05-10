@@ -1,20 +1,21 @@
 <template>
-    <div>
-        <h1 @click="clickEvent">Hello World</h1>
-    </div>
+    <layout-with-top-menu>
+        <h1>Hello World</h1>
+    </layout-with-top-menu>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-
 import { Component } from 'vue-property-decorator';
 
-@Component({})
-export default class Home extends Vue {
+import LayoutWithTopMenu from '@/layouts/LayoutWithTopMenu'
 
-    clickEvent(): void {
-        alert('Click!')
+@Component({
+    components: {
+        LayoutWithTopMenu
     }
+})
+export default class Home extends Vue {
 
 }
 </script>

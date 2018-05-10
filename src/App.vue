@@ -10,9 +10,9 @@ import { Component } from 'vue-property-decorator';
 @Component({})
 export default class App extends Vue {
 
-    clickEvent(): void {
-        alert('Click!')
-    }
-
 }
 </script>
+
+<style lang="scss">
+@import 'src/assets/base.scss';
+</style>

@@ -6,7 +6,6 @@ function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
 
-  
 module.exports = {
     entry: {
         app: [
@@ -20,7 +19,7 @@ module.exports = {
             'vue$': 'vue/dist/vue.esm.js',
             '@': resolve('src')
         },
-        extensions: ['*', '.ts', '.js', '.vue', '.json']
+        extensions: ['.ts', '.js', '.vue', '.json']
     },
     devtool: '#source-map',
     module: {
@@ -37,6 +36,13 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {}
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'css-loader',
+                    'sass-loader'
+                ]
             }
         ]
     },
