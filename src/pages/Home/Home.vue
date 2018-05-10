@@ -8,7 +8,7 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
-import LayoutWithTopMenu from '@/layouts/LayoutWithTopMenu'
+import LayoutWithTopMenu from '@/layouts/LayoutWithTopMenu';
 
 @Component({
     components: {

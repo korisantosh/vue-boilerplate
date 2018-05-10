@@ -4,21 +4,12 @@
         "sourceMap": true,
         "strict": true,
         "noImplicitReturns": true,
-        "module": "esnext",
+        "module": "es2015",
         "moduleResolution": "node",
-        "target": "es6",
+        "target": "es5",
         "allowJs": true,
         "experimentalDecorators": true,
         "strictPropertyInitialization": false,
-        "noImplicitAny": true,
-        "rootDir": "src",
-        "typeRoots": [
-            "./types",
-            "node_modules/@types"
-        ],
-        "baseUrl": "."
-    },
-    "include": [
-        "./src/**/*"
-    ]
+        "noImplicitAny": true
+    }
 }
