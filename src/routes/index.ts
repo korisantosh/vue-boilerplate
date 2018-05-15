@@ -1,19 +1,17 @@
-import Home from '../pages/Home/Home';
-
 export default [
     {
         name: 'home',
         path: '/',
-        component: Home
+        component: () => import('../pages/Home/Home')
     },
     {
         name: 'typescript',
         path: '/typescript',
-        component: Home
+        component: () => import('../pages/Home/TypeScriptIntro')
     },
     {
         name: 'vue',
         path: '/vue',
-        component: Home
+        component: () => import('../pages/Home/VueIntro')
     }
 ]

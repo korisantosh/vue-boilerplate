@@ -1,6 +1,17 @@
 <template>
     <layout-with-top-menu>
-        <h1>Hello World</h1>
+        <div class="container">
+            <h2>Hello World</h2>
+            <p>
+                This boilerpate was created with the goal of simplify the development of Vue applications with TypeScript and all the major libraries for a large app.
+            </p>
+            <p>
+                More information about the project structure can be found on the <a href="https://github.com/kadro/vue-boilerplate">README.md</a> file.
+            </p>
+            <p>
+                If you have any questions or feature requests don't hesitate to open an issue.
+            </p>
+        </div>
     </layout-with-top-menu>
 </template>
 

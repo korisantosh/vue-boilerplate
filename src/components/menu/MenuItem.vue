@@ -18,14 +18,14 @@ export default class MenuItem extends Vue {
 <style lang="scss" scoped>
 a:link, a:visited {
     float: left;
-    display: block;
     line-height: 50px;
     padding: 0 10px;
     color: #FFF;
+    font-weight: normal;
 }
 
-a:hover {
-    background: #757575;
+a:hover, .router-link-exact-active {
+    background: #616161;
 }
 
 </style>

@@ -19,7 +19,7 @@ export default class MenuBar extends Vue {
 
 <style lang="scss" scoped>
 nav {
-    background: black;
+    background: #212121;
     color: #FFF;
 
     > div {
