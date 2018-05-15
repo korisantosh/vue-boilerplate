@@ -15,3 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
         render: h => h(App),
     });
 });
+
+declare var module: any;
+
+if (module.hot) {
+  module.hot.accept();
+}
