@@ -2,7 +2,7 @@ var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
 
-var webpackConfig = require('../config/dev')
+var webpackConfig = require('../config/webpack.dev')
 
 var url = 'http://localhost'
 var port = 8080
@@ -26,7 +26,6 @@ var hotMiddleware = require('webpack-hot-middleware')(compiler, {
 app.use(require('connect-history-api-fallback')())
 
 app.use(devMiddleware)
-
 app.use(hotMiddleware)
 
 var staticPath = path.posix.join(assetsPublicPath, assetsSubDirectory)

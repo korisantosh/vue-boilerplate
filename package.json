@@ -39,13 +39,15 @@
         "tslint": "^5.10.0",
         "tslint-loader": "^3.6.0",
         "typescript": "^2.8.1",
+        "uglifyjs-webpack-plugin": "^1.2.5",
         "vue-class-component": "^6.2.0",
         "vue-loader": "^14.2.2",
         "vue-property-decorator": "^6.0.0",
         "vue-template-compiler": "^2.5.16",
         "webpack": "^4.8.3",
         "webpack-dev-middleware": "^3.1.2",
-        "webpack-hot-middleware": "^2.22.2"
+        "webpack-hot-middleware": "^2.22.2",
+        "webpack-merge": "^4.1.2"
     },
     "engines": {
         "node": ">= 8.0.0",
