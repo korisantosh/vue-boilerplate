@@ -1,10 +1,10 @@
 <template>
-    <nav>
-        <div>
-            <slot name="header" />
-            <slot name="links"/>
-        </div>
-    </nav>
+  <nav>
+    <div>
+      <slot name="header" />
+      <slot name="links"/>
+    </div>
+  </nav>
 </template>
 
 <script lang="ts">
@@ -19,14 +19,14 @@ export default class MenuBar extends Vue {
 
 <style lang="scss" scoped>
 nav {
-    background: #212121;
-    color: #FFF;
+  background: #212121;
+  color: #FFF;
 
-    > div {
-        width: 1000px;
-        display: flex;
-        max-width: 100%;
-        margin: 0 auto;
-    }
+  > div {
+    width: 1000px;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 </style>

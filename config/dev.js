@@ -25,31 +25,44 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpg|gif|svg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {}
-                    }
-                ]
+                enforce: 'pre',
+                test: /\.ts?$/,
+                loader: 'tslint-loader',
+                exclude: /(node_modules)/,
+                options: {
+                    configFile: 'tslint.json'
+                }
             },
             {
                 test: /\.ts?$/,
                 loader: 'ts-loader',
                 options: {
-                  appendTsSuffixTo: [/\.vue$/],
+                    appendTsSuffixTo: [/\.vue$/],
                 }
             },
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
-                options: {}
+                options: {
+                    loaders: {
+                        ts: 'ts-loader!tslint-loader'
+                    }
+                }
             },
             {
                 test: /\.scss$/,
                 use: [
                     'css-loader',
                     'sass-loader'
+                ]
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {}
+                    }
                 ]
             }
         ]
