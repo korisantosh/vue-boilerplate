@@ -9,13 +9,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://gitlab.com/kadro/vue-boilerplate.git"
+        "url": "git+https://github.com/kadro/vue-boilerplate.git"
     },
     "keywords": [],
     "author": "Joao Paulo Martins <martins.joao.paulo.a@gmail.com>",
     "license": "Comercial",
     "bugs": {
-        "url": "https://gitlab.com/kadro/vue-boilerplate/issues"
+        "url": "https://github.com/kadro/vue-boilerplate/issues"
     },
     "dependencies": {
         "axios": "~0.18.0",
