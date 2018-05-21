@@ -24,11 +24,6 @@
     },
     "callable-types": true,
     "class-name": true,
-    "trailing-comma": {
-      "options": {
-        "multiline": "always"
-      }
-    },
     "indent": [true, "spaces", 2],
     "member-access": [
       true,

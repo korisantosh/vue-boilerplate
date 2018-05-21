@@ -7,7 +7,6 @@ module.exports = merge(commonConfig, {
   entry: {
     app: [
       './scripts/dev-client',
-      './src/main.ts'
     ]
   },
   mode: 'development',
