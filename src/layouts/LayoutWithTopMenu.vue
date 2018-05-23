@@ -3,9 +3,9 @@
     <menu-bar class="menu">
       <div class="logo" slot="header">vue-boilerplate</div>
       <div class="menu-links" slot="links">
-        <menu-item :to="{ name: 'home' }">About</menu-item>
-        <menu-item :to="{ name: 'typescript' }">TypeScript</menu-item>
-        <menu-item :to="{ name: 'vue' }">Vue</menu-item>
+        <menu-item :to="{ name: 'home' }">{{ $t('main.about') }}</menu-item>
+        <menu-item :to="{ name: 'typescript' }">{{ $t('main.typeScript') }}</menu-item>
+        <menu-item :to="{ name: 'vue' }">{{ $t('main.vue') }}</menu-item>
       </div>
     </menu-bar>
     <div class="content">

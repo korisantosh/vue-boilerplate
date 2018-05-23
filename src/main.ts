@@ -2,6 +2,7 @@ import Vue from 'vue';
 
 // PLUGINS
 import './plugins/vue-router';
+import { i18n } from './plugins/vue-i18n';
 
 import App from './App';
 
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     el: '#app',
     router,
+    i18n,
     render: (h) => h(App),
   });
 });
