@@ -10,6 +10,8 @@ export const router = new VueRouter({
   routes,
 });
 
+Vue.$router = router;
+
 export default {
   router,
 };
